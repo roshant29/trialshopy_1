@@ -12,6 +12,27 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: Text('hello'));
+    return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(150.0),
+        child: AppBar(
+          backgroundColor: Colors.white,
+          title: const Column(
+            children: [
+              Text(
+                'Profile',
+                style: TextStyle(fontSize: 25, color: Colors.black),
+              ),
+              CircleAvatar(
+                radius: 25,
+                backgroundImage: AssetImage(
+                  'images/shkhan.jpeg',
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
