@@ -32,7 +32,10 @@ class _ServiceScreenState extends State<ServiceScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(
+                    Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black),
+                          borderRadius: BorderRadius.circular(9)),
                       height: 150,
                       width: 150,
                       child: Image.asset('images/car.jpg'),
@@ -40,7 +43,10 @@ class _ServiceScreenState extends State<ServiceScreen> {
                     const SizedBox(
                       width: 10,
                     ),
-                    SizedBox(
+                    Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black),
+                          borderRadius: BorderRadius.circular(9)),
                       height: 150,
                       width: 150, // 50% of screen width
                       child: Image.asset(
@@ -55,7 +61,10 @@ class _ServiceScreenState extends State<ServiceScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(
+                    Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.black),
+                          borderRadius: BorderRadius.circular(9)),
                       height: 150,
                       width: 150,
                       child: Image.asset('images/dog.jpeg'),
@@ -63,7 +72,10 @@ class _ServiceScreenState extends State<ServiceScreen> {
                     const SizedBox(
                       width: 10,
                     ),
-                    SizedBox(
+                    Container(
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.black),
+                            borderRadius: BorderRadius.circular(9)),
                         height: 150,
                         width: 150,
                         child: Image.asset(
@@ -74,7 +86,10 @@ class _ServiceScreenState extends State<ServiceScreen> {
                 const SizedBox(
                   height: 20,
                 ),
-                SizedBox(
+                Container(
+                    decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black),
+                        borderRadius: BorderRadius.circular(9)),
                     height: 150,
                     width: 150,
                     child: Image.asset(
