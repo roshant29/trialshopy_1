@@ -16,7 +16,7 @@ class _ActivityScreenState extends State<ActivityScreen> {
       length: 5,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: const Color.fromARGB(255, 241, 128, 42),
           title: const Text('Activity', style: TextStyle(color: Colors.black)),
           bottom: const TabBar(
             isScrollable: true,
