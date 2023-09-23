@@ -1,3 +1,5 @@
+// This file contains the widgets of wallet
+
 import 'package:flutter/material.dart';
 
 class WalletScreen extends StatefulWidget {

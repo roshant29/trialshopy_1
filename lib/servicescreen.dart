@@ -1,3 +1,5 @@
+//This file contain widgets of the service page
+
 import 'package:flutter/material.dart';
 
 class ServiceScreen extends StatefulWidget {

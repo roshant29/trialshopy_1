@@ -1,5 +1,10 @@
+//This is the first loading page after starting the app
+
 import 'package:flutter/material.dart';
+import 'package:trialshopy/activityscreen.dart';
 import 'package:trialshopy/profilescreen.dart';
+import 'package:trialshopy/servicescreen.dart';
+import 'package:trialshopy/walletscreen.dart';
 
 class HomeScreen extends StatefulWidget {
   static String id = 'homescreen';
@@ -19,23 +24,29 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               //***************Home button************
-              const Expanded(
+              Expanded(
                 child: SizedBox(
                   width: 78.0,
                   height: 64.0,
                   child: Column(
                     children: [
                       IconButton(
-                        padding:
-                            EdgeInsets.only(top: 4.0, right: 18.0, left: 18.0),
-                        onPressed: null,
-                        icon: Icon(
+                        padding: const EdgeInsets.only(
+                            top: 4.0, right: 18.0, left: 18.0),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const HomeScreen()),
+                          );
+                        },
+                        icon: const Icon(
                           Icons.home,
                           color: Color.fromARGB(255, 79, 81, 82),
                           size: 36.0,
                         ),
                       ),
-                      Text(
+                      const Text(
                         'Home',
                         /* style: TextStyle(
                             fontFamily: 'Poppins',
@@ -48,23 +59,29 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
 
               //***************services button***********
-              const Expanded(
+              Expanded(
                 child: SizedBox(
                   width: 78.0,
                   height: 64.0,
                   child: Column(
                     children: [
                       IconButton(
-                        padding:
-                            EdgeInsets.only(top: 4.0, right: 18.0, left: 18.0),
-                        onPressed: null,
-                        icon: Icon(
+                        padding: const EdgeInsets.only(
+                            top: 4.0, right: 18.0, left: 18.0),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const ServiceScreen()),
+                          );
+                        },
+                        icon: const Icon(
                           Icons.apps,
                           color: Color.fromARGB(255, 79, 81, 82),
                           size: 36.0,
                         ),
                       ),
-                      Text(
+                      const Text(
                         'Services',
                       ),
                     ],
@@ -74,23 +91,29 @@ class _HomeScreenState extends State<HomeScreen> {
 
               //************wallet************
 
-              const Expanded(
+              Expanded(
                 child: SizedBox(
                   width: 78.0,
                   height: 64.0,
                   child: Column(
                     children: [
                       IconButton(
-                        padding:
-                            EdgeInsets.only(top: 4.0, right: 18.0, left: 18.0),
-                        onPressed: null,
-                        icon: Icon(
+                        padding: const EdgeInsets.only(
+                            top: 4.0, right: 18.0, left: 18.0),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const WalletScreen()),
+                          );
+                        },
+                        icon: const Icon(
                           Icons.wallet,
                           color: Color.fromARGB(255, 79, 81, 82),
                           size: 36.0,
                         ),
                       ),
-                      Text(
+                      const Text(
                         'Wallet',
                       ),
                     ],
@@ -100,27 +123,29 @@ class _HomeScreenState extends State<HomeScreen> {
 
               //************activity**************
 
-              const Expanded(
+              Expanded(
                 child: SizedBox(
                   width: 78.0,
                   height: 64.0,
                   child: Column(
                     children: [
                       IconButton(
-                        padding:
-                            EdgeInsets.only(top: 4.0, right: 18.0, left: 18.0),
-                        onPressed:  Navigator.push(
+                        padding: const EdgeInsets.only(
+                            top: 4.0, right: 18.0, left: 18.0),
+                        onPressed: () {
+                          Navigator.push(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => const ActivityScreen()),
-                          );,
-                        icon: Icon(
+                          );
+                        },
+                        icon: const Icon(
                           Icons.local_activity,
                           color: Color.fromARGB(255, 79, 81, 82),
                           size: 36.0,
                         ),
                       ),
-                      Text(
+                      const Text(
                         'Activity',
                       ),
                     ],
