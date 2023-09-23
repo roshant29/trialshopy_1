@@ -32,28 +32,41 @@ class _NavState extends State<Nav> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home',
-              backgroundColor: Colors.black,
-              tooltip: 'Home'),
+            icon: Icon(
+              Icons.home,
+              color: Colors.black,
+            ),
+            label: 'Home',
+            tooltip: 'Home',
+          ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.apps),
+            icon: Icon(
+              Icons.apps,
+              color: Colors.black,
+            ),
             label: 'Services',
-            backgroundColor: Colors.black,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.local_activity_rounded),
+            icon: Icon(
+              Icons.local_activity_rounded,
+              color: Colors.black,
+            ),
             label: 'Activity',
-            backgroundColor: Colors.black,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
+            icon: Icon(
+              Icons.person,
+              color: Colors.black,
+            ),
             label: 'profile',
-            backgroundColor: Colors.black,
           ),
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTap,
+        selectedItemColor: Colors.black,
+        selectedLabelStyle: const TextStyle(
+            color: Color.fromARGB(
+                255, 18, 18, 18)), // Change this to your desired color
       ),
     );
   }
