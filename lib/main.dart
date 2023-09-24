@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Nav(),
-      //nav class contain navigation buttons which help in navigating around app
+      //nav class contain navigation buttons which help in navigting around app
     );
   }
 }
