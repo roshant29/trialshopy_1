@@ -14,6 +14,8 @@ class Nav extends StatefulWidget {
 class _NavState extends State<Nav> {
   int _selectedIndex = 0;
   final List<Widget> _widgetOptions = <Widget>[
+    //for navigation different classes are arranged serially
+
     const HomeScreen(),
     const ServiceScreen(),
     const ActivityScreen(),

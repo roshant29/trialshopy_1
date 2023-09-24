@@ -167,7 +167,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       SizedBox(
                         height: 20,
                       ),
+
                       //Emergency contacts
+
                       Row(
                         children: [
                           Icon(
